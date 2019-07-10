@@ -1814,8 +1814,6 @@ client.on('message', message => {
 
 
 
- client.login('NTk4MjUwNzExOTQzMjE3MTUz.XST62A.dv5zUe91HE9U5ESiFoQnxdTjKr4');
- 
  
  
  
@@ -1843,4 +1841,7 @@ client.on('message', message => {
       message.guild.member(user).ban(reason, user);
       message.channel.send(`Done :+1:, I Banned ${user.user.username} from the server!\nReason: \`\`${reason}\`\``);
     }
-});
+}); 
+
+
+client.login(process.env.BOT_TOKEN);
